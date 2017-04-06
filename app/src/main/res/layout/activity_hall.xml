@@ -34,23 +34,27 @@
                 android:id="@+id/button2"
                 android:layout_width="88dp"
                 android:layout_height="48dp"
+                android:layout_marginBottom="8dp"
                 android:layout_marginEnd="23dp"
                 android:layout_marginRight="23dp"
+                android:layout_marginTop="79dp"
                 android:text="提款"
-                app:layout_constraintBaseline_toBaselineOf="@+id/button4"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintRight_toLeftOf="@+id/button4"
-                tools:layout_constraintBaseline_creator="1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
                 tools:layout_constraintRight_creator="1" />
 
-            <Button
+            <ImageButton
                 android:id="@+id/button"
-                android:layout_width="88dp"
-                android:layout_height="48dp"
+                android:layout_width="40dp"
+                android:layout_height="42dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginLeft="9dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginStart="9dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="6dp"
+                android:src="@mipmap/eyeopen2"
                 android:text="隱藏"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintLeft_toRightOf="@+id/textView2"
@@ -64,21 +68,22 @@
                 android:layout_height="48dp"
                 android:layout_marginEnd="37dp"
                 android:layout_marginRight="37dp"
-                android:layout_marginTop="10dp"
-                android:text="轉帳"
+                android:layout_marginTop="7dp"
+                android:text="转帐"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/btnsignup2"
                 tools:layout_constraintTop_creator="1" />
 
-            <Button
+            <ImageButton
                 android:id="@+id/button5"
-                android:layout_width="88dp"
-                android:layout_height="48dp"
+                android:layout_width="44dp"
+                android:layout_height="40dp"
                 android:layout_marginEnd="68dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="68dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
+                android:src="@mipmap/gift"
                 android:text="活動"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -87,13 +92,13 @@
 
             <TextView
                 android:id="@+id/textView2"
-                android:layout_width="105dp"
-                android:layout_height="34dp"
+                android:layout_width="99dp"
+                android:layout_height="25dp"
                 android:layout_marginBottom="17dp"
                 android:layout_marginLeft="122dp"
                 android:layout_marginStart="122dp"
                 android:layout_marginTop="14dp"
-                android:text="帳戶餘額"
+                android:text="帐户余额"
                 android:textSize="24sp"
                 app:layout_constraintBottom_toTopOf="@+id/textView3"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -103,27 +108,32 @@
                 tools:layout_constraintLeft_creator="1"
                 tools:layout_constraintTop_creator="1" />
 
-            <Button
+            <ImageButton
                 android:id="@+id/btnsignup2"
-                android:layout_width="88dp"
-                android:layout_height="48dp"
-                android:layout_marginTop="3dp"
+                android:layout_width="41dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="29dp"
+                android:layout_marginRight="29dp"
+                android:layout_marginTop="36dp"
+                android:src="@mipmap/down"
                 android:text="下拉"
-                app:layout_constraintRight_toRightOf="@+id/btnforget"
-                app:layout_constraintTop_toBottomOf="@+id/button"
-                tools:layout_constraintTop_creator="1" />
+                app:layout_constraintHorizontal_bias="0.51"
+                app:layout_constraintLeft_toLeftOf="@+id/button4"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-            <Button
+            <ImageButton
                 android:id="@+id/btnforget"
-                android:layout_width="88dp"
-                android:layout_height="48dp"
+                android:layout_width="46dp"
+                android:layout_height="41dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginLeft="19dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginStart="19dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="6dp"
+                android:src="@mipmap/cus"
                 android:text="客服"
-                app:layout_constraintHorizontal_bias="0.625"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintLeft_toRightOf="@+id/button"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -132,39 +142,35 @@
                 android:id="@+id/button3"
                 android:layout_width="88dp"
                 android:layout_height="48dp"
-                android:layout_marginLeft="29dp"
-                android:layout_marginStart="29dp"
-                android:layout_marginTop="61dp"
+                android:layout_marginRight="44dp"
+                android:layout_marginTop="31dp"
                 android:text="充值"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button5" />
+                app:layout_constraintRight_toLeftOf="@+id/button2"
+                app:layout_constraintTop_toBottomOf="@+id/button5"
+                android:layout_marginEnd="44dp" />
 
             <TextView
                 android:id="@+id/textView3"
-                android:layout_width="230dp"
-                android:layout_height="0dp"
-                android:layout_marginBottom="8dp"
+                android:layout_width="218dp"
+                android:layout_height="35dp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginLeft="77dp"
+                android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
-                android:layout_marginStart="77dp"
-                android:layout_marginTop="9dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
                 android:text="1234567.00"
                 android:textSize="30sp"
-                app:layout_constraintBottom_toBottomOf="@+id/btnsignup2"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toLeftOf="@+id/btnsignup2"
-                app:layout_constraintTop_toBottomOf="@+id/button5"
-                app:layout_constraintVertical_bias="0.0"
-                tools:layout_constraintBottom_creator="1"
-                tools:layout_constraintTop_creator="1" />
+                app:layout_constraintBottom_toTopOf="@+id/button2"
+                app:layout_constraintHorizontal_bias="0.69"
+                app:layout_constraintLeft_toLeftOf="@+id/button3"
+                app:layout_constraintRight_toRightOf="@+id/button4"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
         </android.support.constraint.ConstraintLayout>
 
         <FrameLayout
-            android:layout_width="wrap_content"
-            android:layout_height="0px"
-            android:layout_weight="1.1"
+            android:layout_width="420dp"
+            android:layout_height="156dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -175,8 +181,8 @@
             tools:layout_constraintTop_creator="1">
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="35dip"
+                android:layout_width="410dp"
+                android:layout_height="43dp"
                 android:layout_gravity="bottom"
                 android:background="#33000000"
                 android:gravity="center"
@@ -240,8 +246,8 @@
 
             <android.support.v4.view.ViewPager
                 android:id="@+id/vp"
-                android:layout_width="match_parent"
-                android:layout_height="126dp" />
+                android:layout_width="wrap_content"
+                android:layout_height="142dp" />
         </FrameLayout>
 
         <LinearLayout

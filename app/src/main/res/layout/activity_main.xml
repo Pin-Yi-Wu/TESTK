@@ -10,31 +10,33 @@
         android:id="@+id/textView"
         android:layout_width="127dp"
         android:layout_height="57dp"
-        android:text="凱盛國際"
-        android:textSize="30sp"
-        android:layout_marginStart="132dp"
-        android:layout_marginEnd="132dp"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="@+id/edtlogin1"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="@+id/edtlogin1"
         android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="凯盛国际"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/edtlogin1"
-        tools:layout_editor_absoluteY="146dp" />
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="@+id/edtlogin1"
+        app:layout_constraintRight_toRightOf="@+id/edtlogin1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
 
     <EditText
         android:id="@+id/edtlogin1"
         android:layout_width="0dp"
         android:layout_height="55dp"
-        android:layout_marginBottom="26dp"
+        android:layout_marginBottom="34dp"
         android:layout_marginEnd="33dp"
         android:layout_marginLeft="33dp"
         android:layout_marginRight="33dp"
         android:layout_marginStart="33dp"
         android:ems="10"
-        android:hint="用戶名"
+        android:hint="用户名"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/edtpassword2"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         tools:layout_constraintLeft_creator="1"
@@ -50,7 +52,7 @@
         android:layout_marginRight="35dp"
         android:layout_marginStart="35dp"
         android:ems="10"
-        android:hint="密碼"
+        android:hint="密码"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -60,22 +62,25 @@
         tools:layout_constraintRight_creator="1" />
 
 
-
     <ImageView
         android:id="@+id/img1"
-        android:layout_width="128dp"
-        android:layout_height="132dp"
-        app:srcCompat="@drawable/command"
+        android:layout_width="0dp"
+        android:layout_height="290dp"
         android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        tools:layout_constraintRight_creator="1"
-        app:layout_constraintRight_toRightOf="@+id/edtlogin1"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/edtlogin1"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
         android:layout_marginTop="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintLeft_toLeftOf="@+id/edtlogin1"
+        app:layout_constraintRight_toRightOf="@+id/edtlogin1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintVertical_bias="0.405"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        app:layout_constraintHorizontal_bias="0.0" />
 
     <Button
         android:id="@+id/btnlogin"
@@ -97,48 +102,51 @@
         android:layout_marginLeft="78dp"
         android:layout_marginRight="79dp"
         app:layout_constraintHorizontal_bias="0.541"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+       />
 
-    <Button
+    <ImageButton
         android:id="@+id/button6"
-        android:layout_width="88dp"
+        android:layout_width="53dp"
         android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="1dp"
+        android:src="@mipmap/eyeopen2"
         android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/btnlogin"
         app:layout_constraintRight_toRightOf="@+id/edtlogin1"
         app:layout_constraintTop_toTopOf="@+id/edtpassword2"
-        android:layout_marginTop="1dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnlogin"
-        app:layout_constraintVertical_bias="1.0"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintBottom_creator="1" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintTop_creator="1" />
 
     <Button
         android:id="@+id/btnsignup2"
         android:layout_width="122dp"
         android:layout_height="48dp"
-        android:layout_marginEnd="38dp"
-        android:text="新註冊帳戶"
-        app:layout_constraintRight_toLeftOf="@+id/btnforget"
-        android:layout_marginRight="38dp"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="16dp"
+        android:layout_marginEnd="38dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginStart="8dp"
+        android:text="新注册帐户"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="@+id/edtpassword2"
-        android:layout_marginStart="8dp" />
+        app:layout_constraintRight_toLeftOf="@+id/btnforget"
+        tools:layout_constraintBottom_creator="1" />
 
     <Button
         android:id="@+id/btnforget"
         android:layout_width="121dp"
         android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
         android:layout_marginEnd="35dp"
-        android:text="忘記密碼?"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
+        android:layout_marginRight="35dp"
+        android:text="忘记密码?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginBottom="16dp"
-        android:layout_marginRight="35dp" />
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1" />
 
 </android.support.constraint.ConstraintLayout>
