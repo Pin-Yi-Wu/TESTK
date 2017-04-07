@@ -17,6 +17,9 @@
         </activity>
         <activity android:name=".HallActivity"></activity>
         <activity android:name=".SignupActivity"></activity>
+        <activity android:name=".SuccessActivity"></activity>
+
+
         <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

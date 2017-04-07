@@ -56,5 +56,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+       /* btnforget.setOnClickListener(new View.OnClickListener() {
+            public  void  onClick(View v){
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this,SuccessActivity.class);
+                startActivity(intent);
+                MainActivity.this.finish();
+
+            }
+        });*/
     }
 }
