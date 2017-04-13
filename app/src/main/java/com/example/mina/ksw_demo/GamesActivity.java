@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 import java.util.zip.Inflater;
 
-public class SuccessActivity extends AppCompatActivity {
+public class GamesActivity extends AppCompatActivity {
 
     private TextView infoTextView;              //ToolBarSource
     private BottomNavigationView bottomNavigationView;            //ToolBarSource
@@ -22,13 +22,10 @@ public class SuccessActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_success);
-
-        //toolbar source
+        setContentView(R.layout.activity_games);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         Inflater inflater = new Inflater();
-
         infoTextView = (TextView) findViewById(R.id.infoTextView);        //ToolBarSource
 
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavigationView);        //ToolBarSource
@@ -37,18 +34,26 @@ public class SuccessActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
+
                 if (item.getItemId() == R.id.inicioItem) {
-                    infoTextView.setText(R.string.inicio);
+                    Intent intent = new Intent();
+                    intent.setClass(GamesActivity.this,HallActivity.class);
+                    startActivity(intent);
                 } else if (item.getItemId() == R.id.buscarItem) {
-                    infoTextView.setText(R.string.buscar);
+                    Intent intent = new Intent();
+                    intent.setClass(GamesActivity.this,LiveActivity.class);
+                    startActivity(intent);
                 } else if (item.getItemId() == R.id.camaraItem) {
-                    infoTextView.setText(R.string.camara);
+                    Intent intent = new Intent();
+                    intent.setClass(GamesActivity.this,SlotActivity.class);
+                    startActivity(intent);
                 } else if (item.getItemId() == R.id.favoritosItem) {
-                    infoTextView.setText(R.string.favoritos);
+                    Intent intent = new Intent();
+                    intent.setClass(GamesActivity.this,GamesActivity.class);
+                    startActivity(intent);
                 } else if (item.getItemId() == R.id.perfilItem) {
                     infoTextView.setText(R.string.perfil);
                 }
-
                 return false;
             }
         });                             //ToolBarSource
@@ -57,7 +62,7 @@ public class SuccessActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_main,menu);
+        inflater.inflate(R.menu.menu,menu);
         return super.onCreateOptionsMenu(menu);
     }
     @Override
@@ -65,12 +70,12 @@ public class SuccessActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.help:
                 Intent intent = new Intent();
-                intent.setClass(SuccessActivity.this,Customer_Service.class);
+                intent.setClass(GamesActivity.this,Customer_Service.class);
                 startActivity(intent);
-
+            case R.id.event:
+                Toast.makeText(GamesActivity.this,"event",Toast.LENGTH_SHORT).show();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
-    }
-
-}
+    }}

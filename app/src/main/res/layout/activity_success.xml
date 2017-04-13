@@ -7,7 +7,9 @@
     android:layout_height="match_parent"
     tools:context="com.example.mina.ksw_demo.SuccessActivity">
 
-
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar"/>
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
