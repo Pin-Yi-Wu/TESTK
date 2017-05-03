@@ -6,7 +6,7 @@
 
   <!-- Settings, should always be in the overflow -->
   <item android:id="@+id/help"
-      android:icon="@drawable/help"
+      android:icon="@mipmap/nav_arrow_icon"
       android:title="@string/help"
       app:showAsAction="always"/>
 

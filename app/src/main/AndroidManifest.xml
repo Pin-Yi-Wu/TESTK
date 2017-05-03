@@ -4,12 +4,13 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/index_realman_ag"
         android:label="凯盛国际"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/index_realman_ag"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.default" />
@@ -17,13 +18,29 @@
         </activity>
         <activity android:name=".HallActivity"></activity>
         <activity android:name=".SignupActivity"></activity>
-        <activity android:name=".SuccessActivity"></activity>
+        <activity android:name=".SuccessFPActivity"></activity>
+        <activity android:name=".SuccessLIActivity"></activity>
         <activity android:name=".Find_Password"></activity>
+        <activity android:name=".Find_Account"></activity>
         <activity android:name=".LiveActivity"></activity>
-        <activity android:name=".GamesActivity"></activity>
         <activity android:name=".SlotActivity"></activity>
+        <activity android:name=".GamesActivity"></activity>
         <activity android:name=".Customer_Service"></activity>
         <activity android:name=".Customer_Service_Nologin"></activity>
+        <activity android:name=".BaseActivity"></activity>
+        <activity android:name=".MyActivity"></activity>
+        <activity android:name=".AccountActivity"></activity>
+        <activity android:name=".Edit_Account"></activity>
+        <activity android:name=".Edit_Password"></activity>
+        <activity android:name=".Edit_Draw"></activity>
+        <activity android:name=".Bind_Phone"></activity>
+        <activity android:name=".Bind_Email"></activity>
+        <activity android:name=".Bind_Card"></activity>
+        <activity android:name=".Balance_Activity"></activity>
+        <activity android:name=".DepositActivity"></activity>
+        <activity android:name=".Transfer_Activity"></activity>
+        <activity android:name=".Debit_Activity"></activity>
+        <activity android:name=".UPMarqueeView"></activity>
 
         <activity android:name=".Splash">
             <intent-filter>

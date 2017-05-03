@@ -8,10 +8,10 @@
         <item name="android:textSize">14sp</item>
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">#D50000</item>
-        <item name="colorControlNormal">#ff4081</item>
+        <item name="colorAccent">#720000</item>
+        <item name="colorControlNormal">#cfcfcf</item>
         <!-- 选择的底线颜色 -->
-        <item name="colorControlActivated">#ff4081</item>
+        <item name="colorControlActivated">#cfcfcf</item>
     </style>
 
 </resources>

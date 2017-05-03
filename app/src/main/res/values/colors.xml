@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="icon_press">#D8A86B</color>
+    <color name="icon_unpress">#7B7B7B</color>
+    <color name="login_hint">#727775</color>
+    <color name="login_line">#843c3c</color>
+    <color name="find_line">#D8D8D8</color>
+    <color name="find_text">#5E5E5E</color>
+    <color name="find_hint">#cfcfcf</color>
+    <color name="find">#595959</color>
+    <color name="password_hint">#9d9d9d</color>
+    <color name="bottom">#7B7B7B</color>
+    <color name="layout_title">#e3a35a</color>
+    <color name="spinner">#a0a0a0</color>
+    <color name="index">#e3a35a</color>
+    <color name="frg_color">#fafafa</color>
+
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303f9f</color>
     <color name="colorAccent">#f4b2c8</color>
@@ -38,11 +53,12 @@
     <color name="md_red_600">#E53935</color>
     <color name="md_red_700">#D32F2F</color>
     <color name="md_red_800">#C62828</color>
-    <color name="md_red_900">#B71C1C</color>
+    <color name="md_red_900">#740808</color>
     <color name="md_red_A100">#FF8A80</color>
     <color name="md_red_A200">#FF5252</color>
     <color name="md_red_A400">#FF1744</color>
     <color name="md_red_A700">#D50000</color>
+    <color name="main_red">#720000</color>
 
     <!-- pinks -->
     <color name="md_pink_50">#FCE4EC</color>

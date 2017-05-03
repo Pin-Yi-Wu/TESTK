@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar"
+      />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="283dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/layout_title"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:text="绑定新银行卡"
+        android:textAlignment="viewStart"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <FrameLayout
+        android:layout_width="420dp"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        tools:layout_editor_absoluteX="-18dp"
+        android:id="@+id/frameLayout"
+        android:layout_marginTop="48dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="410dp"
+            android:layout_height="43dp"
+            android:layout_gravity="bottom"
+            android:background="#33000000"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/dot_0"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:background="@drawable/dot_black" />
+
+                <View
+                    android:id="@+id/dot_1"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:background="@drawable/dot_white" />
+
+                <View
+                    android:id="@+id/dot_2"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:background="@drawable/dot_white" />
+
+                <View
+                    android:id="@+id/dot_3"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:background="@drawable/dot_white" />
+
+                <View
+                    android:id="@+id/dot_4"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:background="@drawable/dot_white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="wrap_content"
+            android:layout_height="142dp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="350dp"
+        android:layout_height="39dp"
+        android:text="您最多可绑定三张银行卡，已绑定的银行如需更改，请联系在现客服。"
+        android:textColor="@color/login_hint"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="317dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        app:layout_constraintVertical_bias="0.6"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="346dp"
+        android:layout_height="254dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView19">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableBottom="@drawable/editline">
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="41dp"
+                    android:layout_marginTop="39dp"
+                    android:text="开户姓名"
+                    android:textAlignment="viewStart"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/editbankName"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="25dp"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:textColor="@color/login_hint"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.265"
+                    tools:layout_constraintLeft_creator="1"
+                    tools:layout_constraintRight_creator="1" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="280dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/editline" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableBottom="@drawable/editline">
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="280dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/editline" />
+
+                <EditText
+                    android:id="@+id/editbankCard"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="25dp"
+                    android:ems="10"
+                    android:hint="请真实准确输入并仔细核对"
+                    android:inputType="phone"
+                    android:textColor="@color/login_hint"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.265"
+                    tools:layout_constraintLeft_creator="1"
+                    tools:layout_constraintRight_creator="1" />
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="41dp"
+                    android:layout_marginTop="39dp"
+                    android:text="银行卡号"
+                    android:textAlignment="viewStart"
+                    android:textSize="15sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:drawableBottom="@drawable/editline">
+
+                <TextView
+                    android:id="@+id/Text2"
+                    android:layout_width="69dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="41dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:text="银行名称"
+                    android:textColor="@color/login_hint"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.265"
+                    tools:layout_constraintLeft_creator="1"
+                    tools:layout_constraintRight_creator="1" />
+
+                <Spinner
+                    android:id="@+id/spinner4"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="20dp" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="280dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/editline" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line2" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_weight="0.36"
+                android:text="开户地址"
+                android:textSize="15sp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="35dp"
+                android:drawableBottom="@drawable/editline">
+
+                <TextView
+                    android:id="@+id/editbankName"
+                    android:layout_width="68dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:text="选择省"
+                    android:textColor="@color/spinner"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.265"
+                    tools:layout_constraintLeft_creator="1"
+                    tools:layout_constraintRight_creator="1" />
+
+                <Spinner
+                    android:id="@+id/spinner3"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="280dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/editline" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="35dp"
+                android:drawableBottom="@drawable/editline">
+
+                <TextView
+                    android:id="@+id/editbankName"
+                    android:layout_width="68dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:text="选择县"
+                    android:textColor="@color/spinner"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.265"
+                    tools:layout_constraintLeft_creator="1"
+                    tools:layout_constraintRight_creator="1" />
+
+                <Spinner
+                    android:id="@+id/spinner3"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="280dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/editline" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="35dp"
+                android:drawableBottom="@drawable/editline">
+
+                <TextView
+                    android:id="@+id/editbankName"
+                    android:layout_width="68dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:text="选择区"
+                    android:textColor="@color/spinner"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.265"
+                    tools:layout_constraintLeft_creator="1"
+                    tools:layout_constraintRight_creator="1" />
+
+                <Spinner
+                    android:id="@+id/spinner3"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="280dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/editline" />
+
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="280dp"
+                android:layout_height="39dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_rectangle_with_corners"
+                android:gravity="center"
+                android:text="绑定银行卡"
+                android:textColor="@color/colorWhite"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:layout_constraintBottom_creator="1"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

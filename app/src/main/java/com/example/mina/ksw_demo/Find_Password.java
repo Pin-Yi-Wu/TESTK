@@ -9,12 +9,13 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.zip.Inflater;
 
 public class Find_Password extends AppCompatActivity {
-    Button btnsignup2,btnlogin2;
+    Button btnsignup2,btnbacklogin2;
 
 
     @Override
@@ -22,13 +23,23 @@ public class Find_Password extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.find_password);
         btnsignup2 = (Button)findViewById(R.id.btnsignup2);
-       btnlogin2 = (Button)findViewById(R.id.btnlogin2);
+       btnbacklogin2 = (Button)findViewById(R.id.btnbacklogin2);
         //toolbar source
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
         Inflater inflater = new Inflater();
+        TextView title=(TextView)toolbar.findViewById(R.id.title) ;
+        title.setText("找回密码");
+        toolbar.setNavigationIcon(R.mipmap.nav_customer_icon);          //在這邊可以用drawable改變不同的返回icon
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),Find_Account.class));        //表示點擊後Intent的頁面
+            }
+        });
 
-    btnsignup2.setOnClickListener(new View.OnClickListener() {
+        btnsignup2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
@@ -38,7 +49,7 @@ public class Find_Password extends AppCompatActivity {
             }
         });
 
-     btnlogin2.setOnClickListener(new View.OnClickListener() {
+     btnbacklogin2.setOnClickListener(new View.OnClickListener() {
          @Override
          public void onClick(View v) {
              Intent intent = new Intent();

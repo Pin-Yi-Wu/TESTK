@@ -5,14 +5,13 @@ import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
+import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 import java.util.regex.Matcher;
@@ -20,7 +19,7 @@ import java.util.regex.Pattern;
 import java.util.zip.Inflater;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnlogin, btnsignup, btnforget;
+    Button btnlogin, btnsignup, btnforget,btnhelp;
     EditText edtlogin1, edtpassword2;
     ImageView img1;
     CheckBox hide01;
@@ -42,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         final TextInputLayout usernameWrapper = (TextInputLayout) findViewById(R.id.usernameWrapper);
         final TextInputLayout passwordWrapper = (TextInputLayout) findViewById(R.id.passwordWrapper);
-        usernameWrapper.setHint("用户名");
+       // usernameWrapper.setHint("用户名");
         passwordWrapper.setHint("密码");
 
         //toolbar source
@@ -53,9 +52,13 @@ public class MainActivity extends AppCompatActivity {
         btnlogin = (Button) findViewById(R.id.btnlogin);
         btnsignup = (Button) findViewById(R.id.btnsignup2);
         btnforget = (Button) findViewById(R.id.btnforget);
+        btnhelp = (Button)findViewById(R.id.btnhelp) ;
         edtlogin1 = (EditText) findViewById(R.id.edtlogin1);
-        edtpassword2 = (EditText) findViewById(R.id.edtpassword2);
+        edtpassword2 = (EditText) findViewById(R.id.edtnumber);
         img1 = (ImageView) findViewById(R.id.img1);
+        ImageButton imgsignup = (ImageButton)findViewById(R.id.imgsignup1);
+        ImageButton imgforget = (ImageButton)findViewById(R.id.imgforget1);
+        ImageButton imghelp = (ImageButton)findViewById(R.id.imghelp);
       //因使用"InputType-textpassword"因此就不需要在用其他按鈕實現密碼隱藏  hide01 = (CheckBox) findViewById(R.id.hide01);
 
         btnlogin.setOnClickListener(new View.OnClickListener() {
@@ -64,7 +67,8 @@ public class MainActivity extends AppCompatActivity {
                 hideKeyboard();
                 String username = usernameWrapper.getEditText().getText().toString();
                 String passwordwrapper = passwordWrapper.getEditText().getText().toString();
-
+               String md5 =  convertPassMd5.convertPassMd5(username);
+                Log.d("md5",md5);
                 if (!validateEmail(username)) {
                     usernameWrapper.setError("信箱格式不正确！");
                 } else if (!validatePassword(passwordwrapper)) {
@@ -85,6 +89,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        imgsignup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this,SignupActivity.class);
+                startActivity(intent);
+            }
+        });
                  /*   因使用"InputType-textpassword"因此就不需要在用其他按鈕實現密碼隱藏
                                 hide01.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                                     @Override
@@ -98,33 +110,36 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setClass(MainActivity.this,Find_Password.class);
+                intent.setClass(MainActivity.this,Find_Account.class);
+                startActivity(intent);
+            }
+        });
+        imgforget.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this,Find_Account.class);
+                startActivity(intent);
+            }
+        });
+        btnhelp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this,HallActivity.class);           //CUSTOMER_SERVICE
+                startActivity(intent);
+            }
+        });
+        imghelp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this,Customer_Service_Nologin.class);           //CUSTOMER_SERVICE
                 startActivity(intent);
             }
         });
 
 }
-
-    //放按钮在action bar上面，Toast测试按钮的可用性
-    //注意：最重要的是要在menu上面放上所需要用的材料
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_main,menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.help:
-                Intent intent = new Intent();
-                intent.setClass(MainActivity.this,Customer_Service_Nologin.class);
-                startActivity(intent);
-
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
     public boolean validateEmail(String email) {
         matcher = pattern.matcher(email);
         return matcher.matches();

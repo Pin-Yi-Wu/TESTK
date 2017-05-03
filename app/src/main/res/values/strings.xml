@@ -4,11 +4,12 @@
     <string name="app_name">viewpage</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-    <string name="inicio">大廳</string>
-    <string name="buscar">真人</string>
-    <string name="camara">老虎机</string>
-    <string name="favoritos">综合</string>
-    <string name="perfil">我的</string>
+
+    <string name="Matching">大廳</string>
+    <string name="Watchlist">真人</string>
+    <string name="Rates">老虎机</string>
+    <string name="Deals">综合</string>
+    <string name="Listing">我的</string>
 
     <string name="event">event</string>
     <string name="help">help</string>
