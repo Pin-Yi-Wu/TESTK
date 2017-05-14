@@ -1,211 +1,242 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.mina.ksw_demo.SignupActivity"
-    tools:layout_editor_absoluteY="81dp"
-    tools:layout_editor_absoluteX="0dp">
+    android:orientation="vertical">
 
     <include
         android:id="@+id/toolbar"
         layout="@layout/tool_bar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1"
-        app:layout_constraintRight_toRightOf="parent" />
+        />
 
 
-    <Button
-        android:id="@+id/btnsignup2"
-        android:layout_width="0dp"
-        android:layout_height="55dp"
-        android:layout_marginBottom="76dp"
-        android:layout_marginEnd="62dp"
-        android:layout_marginLeft="62dp"
-        android:layout_marginRight="62dp"
-        android:layout_marginStart="62dp"
-        android:background="@drawable/bg_rectangle_with_corners"
-        android:text="注册"
-        android:textColor="@color/colorWhite"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/edtnumber"
-        app:layout_constraintVertical_bias="1.0" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/passwordWrapper"
-        android:layout_width="0dp"
-        android:layout_height="77dp"
-        android:layout_below="@id/usernameWrapper"
-        android:layout_marginEnd="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginRight="28dp"
-        android:layout_marginStart="28dp"
-        android:layout_weight="1"
-        android:textColorHint="@color/login_hint"
-        android:theme="@style/AppTheme"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/edtaccount"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.0">
-
-        <EditText
-            android:id="@+id/editText"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="47dp"
-            android:layout_marginBottom="41dp"
-            android:ems="10"
-            android:hint="密码"
-            android:inputType="textPassword"
-            app:layout_constraintBottom_toTopOf="@+id/edtnumber"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintLeft_toLeftOf="@+id/edtnumber"
-            app:layout_constraintRight_toRightOf="@+id/edtnumber"
-            tools:layout_constraintLeft_creator="1"
-            tools:layout_constraintRight_creator="1" />
-    </android.support.design.widget.TextInputLayout>
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/edtphone"
-        android:layout_width="0dp"
-        android:layout_height="77dp"
-        android:layout_below="@id/usernameWrapper"
-        android:layout_marginEnd="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginRight="28dp"
-        android:layout_marginStart="28dp"
-        android:layout_weight="1"
-        android:textColorHint="@color/login_hint"
-        android:theme="@style/AppTheme"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/passwordWrapper"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.0">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/WeditAccoint"
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:textColorHint="@color/login_hint"
+                android:theme="@style/AppTheme">
 
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="match_parent"
-            android:layout_height="47dp"
-            android:layout_marginBottom="41dp"
-            android:ems="10"
-            android:hint="手机"
-            android:inputType="phone"
-            app:layout_constraintBottom_toTopOf="@+id/edtnumber"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintLeft_toLeftOf="@+id/edtnumber"
-            app:layout_constraintRight_toRightOf="@+id/edtnumber"
-            tools:layout_constraintLeft_creator="1"
-            tools:layout_constraintRight_creator="1" />
-    </android.support.design.widget.TextInputLayout>
+                <EditText
+                    android:id="@+id/weditAccoint"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:ems="10"
+                    android:hint="用户名：由4-8个小英文字母或数字组成"
+                    android:inputType="textPersonName" />
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/edtnumber"
-        android:layout_width="0dp"
-        android:layout_height="77dp"
-        android:layout_below="@id/usernameWrapper"
-        android:layout_marginEnd="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginRight="28dp"
-        android:layout_marginStart="28dp"
-        android:layout_weight="1"
-        android:textColorHint="@color/login_hint"
-        android:theme="@style/AppTheme"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/edtphone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.0">
+            </android.support.design.widget.TextInputLayout>
 
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="match_parent"
-            android:layout_height="47dp"
-            android:layout_marginBottom="41dp"
-            android:ems="10"
-            android:hint="推荐码"
-            android:inputType="number"
-            app:layout_constraintBottom_toTopOf="@+id/edtnumber"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintLeft_toLeftOf="@+id/edtnumber"
-            app:layout_constraintRight_toRightOf="@+id/edtnumber"
-            tools:layout_constraintLeft_creator="1"
-            tools:layout_constraintRight_creator="1" />
-    </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/WeditPassword"
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textColorHint="@color/login_hint"
+                android:theme="@style/AppTheme">
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/edtaccount"
-        android:layout_width="0dp"
-        android:layout_height="77dp"
-        android:layout_below="@id/usernameWrapper"
-        android:layout_marginEnd="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginRight="28dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="56dp"
-        android:layout_weight="1"
-        android:textColorHint="@color/login_hint"
-        android:theme="@style/AppTheme"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.0">
+                <EditText
+                    android:id="@+id/weditPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:ems="10"
+                    android:hint="密码：由6-12个数字或英文字母组成"
+                    android:inputType="textPassword" />
+            </android.support.design.widget.TextInputLayout>
 
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="match_parent"
-            android:layout_height="47dp"
-            android:layout_marginBottom="41dp"
-            android:ems="10"
-            android:hint="用戶名"
-            android:inputType="textPersonName"
-            app:layout_constraintBottom_toTopOf="@+id/edtnumber"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintLeft_toLeftOf="@+id/edtnumber"
-            app:layout_constraintRight_toRightOf="@+id/edtnumber"
-            tools:layout_constraintLeft_creator="1"
-            tools:layout_constraintRight_creator="1" />
-    </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/WeditPassword2"
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textColorHint="@color/login_hint"
+                android:theme="@style/AppTheme">
 
-</android.support.constraint.ConstraintLayout>
+                <EditText
+                    android:id="@+id/weditPassword2"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:ems="10"
+                    android:hint="确认密码：由6-12个数字或英文字母组成"
+                    android:inputType="textPassword"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/WeditName"
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textColorHint="@color/login_hint"
+                android:theme="@style/AppTheme">
+
+                <EditText
+                    android:id="@+id/weditName"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:ems="10"
+                    android:hint="真实姓名：必须与您的银行账户名称相同，否则不能出款"
+                    android:inputType="phone" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/WeditPhone"
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textColorHint="@color/login_hint"
+                android:theme="@style/AppTheme">
+
+                <EditText
+                    android:id="@+id/weditPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:ems="10"
+                    android:hint="手机：请输入你的常用联系电话"
+                    android:inputType="phone" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/WeditQQ"
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textColorHint="@color/login_hint"
+                android:theme="@style/AppTheme">
+
+                <EditText
+                    android:id="@+id/weditQQ"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:ems="10"
+                    android:hint="QQ：请输入你的QQ"
+                    android:inputType="phone" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/WeditMail"
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textColorHint="@color/login_hint"
+                android:theme="@style/AppTheme">
+
+                <EditText
+                    android:id="@+id/weditMail"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:ems="10"
+                    android:hint="邮箱：请输入你的邮箱，建议使用谷歌邮箱"
+                    android:inputType="phone" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/WeditBirth"
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textColorHint="@color/login_hint"
+                android:theme="@style/AppTheme">
+
+                <EditText
+                    android:id="@+id/weditBirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:ems="10"
+                    android:hint="生日"
+                    android:inputType="phone" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/WeditV"
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textColorHint="@color/login_hint"
+                android:theme="@style/AppTheme">
+
+                <EditText
+                    android:id="@+id/weditV"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:ems="10"
+                    android:hint="验证码：请输入验证码"
+                    android:inputType="phone" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/WeditInvite"
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textColorHint="@color/login_hint"
+                android:theme="@style/AppTheme">
+
+                <EditText
+                    android:id="@+id/weditInvite"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:ems="10"
+                    android:hint="邀请码：好友邀请码，选填！！"
+                    android:inputType="phone" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:text="本人已经超过合法年龄以及本人在此网站的所有活动并没有抵触本人所有身在的国家所管的法律"
+                android:textColor="@color/sign_hint"
+                android:textSize="11sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:layout_weight="1"
+                android:text="我已满18岁同意并接受《凯盛国际用户协议》"
+                android:textColor="@color/spinner" />
+
+            <Button
+                android:id="@+id/btnsignup2"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rectangle_with_corners"
+                android:text="注册"
+                android:textColor="@color/colorWhite" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

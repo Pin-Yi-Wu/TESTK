@@ -13,8 +13,13 @@
     <color name="layout_title">#e3a35a</color>
     <color name="spinner">#a0a0a0</color>
     <color name="index">#e3a35a</color>
-    <color name="frg_color">#fafafa</color>
+    <color name="sign_hint">#aeaeae</color>
 
+
+
+    <color name="debit">#42a8b5</color>
+    <color name="frg_color">#fafafa</color>
+    <color name="frg_back">#00000000</color>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303f9f</color>
     <color name="colorAccent">#f4b2c8</color>

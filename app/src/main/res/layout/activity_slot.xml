@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:design="http://schemas.android.com/apk/res-auto"
-    tools:context="com.example.mina.ksw_demo.HallSlotActivity"
+    tools:context="com.example.mina.ksw_demo.SlotActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:layout_editor_absoluteX="0dp"
@@ -51,6 +51,7 @@
             android:layout_marginTop="12dp"
             android:layout_weight="0"
             android:src="@mipmap/tiger_mg" />
+
     </LinearLayout>
 
 </RelativeLayout>

@@ -8,6 +8,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -27,6 +28,8 @@ public class Edit_Account extends BaseActivity{
         dynamicContent = (LinearLayout) findViewById(R.id.dynamicContent);
         View wizard = getLayoutInflater().inflate(R.layout.edit_account, null);
         dynamicContent.addView(wizard);
+
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);

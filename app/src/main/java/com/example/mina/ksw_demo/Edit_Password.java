@@ -9,6 +9,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -23,6 +24,13 @@ public class Edit_Password extends BaseActivity {
         dynamicContent = (LinearLayout) findViewById(R.id.dynamicContent);
         View wizard = getLayoutInflater().inflate(R.layout.edit_password, null);
         dynamicContent.addView(wizard);
+
+        EditText editOpass = (EditText)findViewById(R.id.editOpass);
+        editOpass.setBackgroundDrawable(null);
+        EditText editNpass = (EditText)findViewById(R.id.editNpass);
+        editNpass.setBackgroundDrawable(null);
+        EditText editNpass2 = (EditText)findViewById(R.id.editNpass2);
+        editNpass2.setBackgroundDrawable(null);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

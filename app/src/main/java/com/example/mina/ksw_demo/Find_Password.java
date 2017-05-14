@@ -9,6 +9,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,6 +26,11 @@ public class Find_Password extends AppCompatActivity {
         btnsignup2 = (Button)findViewById(R.id.btnsignup2);
        btnbacklogin2 = (Button)findViewById(R.id.btnbacklogin2);
         //toolbar source
+        EditText findAccount = (EditText)findViewById(R.id.findAccount);
+        findAccount.setBackgroundDrawable(null);
+        EditText findPhone = (EditText)findViewById(R.id.findPhone);
+        findPhone.setBackgroundDrawable(null);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);

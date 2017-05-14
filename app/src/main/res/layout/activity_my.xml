@@ -1,505 +1,330 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="360dp"
-    android:layout_height="640dp">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <include
         android:id="@+id/toolbar"
         layout="@layout/tool_bar"
-        android:layout_height="0dp"
-        android:layout_width="0dp"
-        app:layout_constraintRight_toLeftOf="parent"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/img7"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="47dp"
-        android:layout_height="0dp"
-        app:srcCompat="@mipmap/mind_memeberhead_icon"
-        app:layout_constraintRight_toLeftOf="@+id/textView61"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        android:layout_marginStart="29dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView15"
-        android:layout_marginEnd="30dp"
-        android:layout_marginTop="7dp"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="7dp"
-        app:layout_constraintLeft_toLeftOf="@+id/textView15"
-        app:layout_constraintTop_toTopOf="@+id/textView12"
-        android:layout_marginLeft="29dp"
-        android:layout_marginRight="30dp" />
-
-    <TextView
-        android:id="@+id/tvaccountName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="你好，"
-        android:textSize="16sp"
-        app:layout_constraintLeft_toLeftOf="@+id/textView12"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintTop_creator="1" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="103dp"
-        android:layout_height="15dp"
-        android:layout_marginBottom="36dp"
-        android:layout_marginEnd="112dp"
-        android:layout_marginLeft="114dp"
-        android:layout_marginRight="112dp"
-        android:layout_marginStart="114dp"
-        android:layout_marginTop="34dp"
-        android:text="TextView"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView15"
-        app:layout_constraintLeft_toLeftOf="@+id/textView15"
-        app:layout_constraintRight_toLeftOf="@+id/img7"
-        app:layout_constraintTop_toBottomOf="@+id/tvaccountName"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
-
-    <ImageButton
-        android:id="@+id/img7"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="88dp"
-        android:layout_height="48dp"
-        app:srcCompat="@mipmap/arrow"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        android:layout_marginEnd="38dp"
-        app:layout_constraintRight_toRightOf="@+id/textView16"
-        android:layout_marginTop="56dp"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginRight="38dp" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="0dp"
-        android:layout_height="12dp"
-        android:background="@drawable/line"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@drawable/line"
-        tools:layout_constraintRight_creator="1"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintTop_toTopOf="@+id/textView13"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintBottom_toBottomOf="@+id/textView13" />
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="455dp"
-        android:layout_height="12dp"
-        android:background="@drawable/line"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="@+id/btnbalance"
-        app:layout_constraintTop_toBottomOf="@+id/btnbalance"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintVertical_bias="0.416" />
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="0dp"
-        android:layout_height="7dp"
-        android:background="@drawable/line"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="@+id/btnbalance"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="48dp"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="41dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/img7"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/textView62"
-        android:layout_width="77dp"
-        android:layout_height="21dp"
-        android:layout_marginBottom="6dp"
-        android:layout_marginLeft="19dp"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="6dp"
-        android:text="帐户馀额："
-        android:textSize="11sp"
-        app:layout_constraintBottom_toBottomOf="@+id/btnbalance"
-        app:layout_constraintLeft_toLeftOf="@+id/textView15"
-        app:layout_constraintTop_toBottomOf="@+id/textView15"
-        app:layout_constraintVertical_bias="1.0"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintTop_creator="1" />
-
-    <ImageButton
-        android:id="@+id/btnbalance"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="88dp"
-        android:layout_height="48dp"
-        app:srcCompat="@mipmap/arrow"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        app:layout_constraintRight_toRightOf="@+id/img7"
-        app:layout_constraintTop_toBottomOf="@+id/img7"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/img7" />
-
-    <ImageButton
-        android:id="@+id/imageButton22"
-        android:layout_width="169dp"
-        android:layout_height="61dp"
-        app:layout_constraintRight_toLeftOf="@+id/imageButton21"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton31"
-        android:layout_marginTop="60dp"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="71dp"
-        app:layout_constraintLeft_toLeftOf="@+id/imageButton32"
-        app:layout_constraintTop_toTopOf="@+id/imageButton32"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintVertical_bias="0.928" />
-
-    <ImageButton
-        android:id="@+id/imageButton24"
-        android:layout_width="169dp"
-        android:layout_height="72dp"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton30"
-        android:layout_marginStart="8dp"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="8dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton21"
-        android:layout_width="169dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="86dp"
-        android:layout_marginStart="86dp"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton32"
-        app:layout_constraintRight_toRightOf="@+id/textView16"
-        app:layout_constraintTop_toBottomOf="@+id/textView13"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/textView12"
-        android:layout_marginLeft="86dp"
-        android:layout_marginRight="86dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton29"
-        android:layout_width="170dp"
-        android:layout_height="61dp"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton31"
-        app:layout_constraintRight_toRightOf="@+id/imageButton21"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/imageButton21"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintTop_toTopOf="@+id/guideline2"
-        android:layout_marginTop="8dp"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <ImageButton
-        android:id="@+id/imageButton30"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton28"
-        app:layout_constraintRight_toRightOf="@+id/imageButton24"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/imageButton24"
-        app:layout_constraintTop_toTopOf="@+id/imageButton28" />
-
-    <ImageButton
-        android:id="@+id/imageButton31"
-        android:layout_width="0dp"
-        android:layout_height="69dp"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton28"
-        app:layout_constraintRight_toRightOf="@+id/imageButton29"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/imageButton29"
-        app:layout_constraintHorizontal_bias="0.0" />
-
-    <ImageButton
-        android:id="@+id/imageButton28"
-        android:layout_width="0dp"
-        android:layout_height="69dp"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="@+id/imageButton31"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="2dp"
-        app:layout_constraintLeft_toLeftOf="@+id/imageButton31"
-        app:layout_constraintHorizontal_bias="0.0" />
-
-    <ImageButton
-        android:id="@+id/imageButton32"
-        android:layout_width="0dp"
-        android:layout_height="69dp"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton24"
-        app:layout_constraintRight_toRightOf="@+id/imageButton24"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="51dp"
-        app:layout_constraintLeft_toLeftOf="@+id/imageButton24"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintTop_toTopOf="@+id/guideline2"
-        android:layout_marginTop="8dp"
-        app:layout_constraintVertical_bias="0.533" />
-
-    <android.support.constraint.Guideline
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/guideline2"
-        app:layout_constraintGuide_begin="266dp"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@drawable/linearlayoutline"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteY="266dp"
-        tools:layout_editor_absoluteX="0dp" />
+        android:weightSum="3">
 
-    <android.support.constraint.Guideline
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/guideline3"
-        app:layout_constraintGuide_begin="551dp"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteY="551dp"
-        tools:layout_editor_absoluteX="0dp" />
+        <FrameLayout
+            android:id="@+id/gotoeditAccoint"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
 
-    <TextView
-        android:id="@+id/textView61"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="12,834,971,239.00"
-        android:textSize="18sp"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/textView16"
-        android:layout_marginStart="10dp"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="5dp"
-        app:layout_constraintLeft_toRightOf="@+id/textView62"
-        android:layout_marginLeft="10dp" />
+            <ImageView
+                android:layout_width="47dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="6dp"
+                app:srcCompat="@mipmap/mind_memeberhead_icon" />
 
-    <FrameLayout
-        android:id="@+id/frgdesposite"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@color/frg_color"
-        android:clickable="true"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintRight_toRightOf="@+id/view"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/view4"
-        app:layout_constraintTop_toTopOf="@+id/view">
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginLeft="92dp"
+                android:layout_marginTop="41dp"
+                android:text="TextView"
+                android:textSize="12sp" />
 
-        <ImageButton
-            android:id="@+id/btndeposit"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="56dp"
-            android:layout_height="56dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="13dp"
-            app:srcCompat="@mipmap/mind_transfermoney_icon"
-            tools:layout_editor_absoluteX="8dp"
-            tools:layout_editor_absoluteY="182dp" />
+            <TextView
+                android:id="@+id/tvaccountName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="92dp"
+                android:layout_marginTop="15dp"
+                android:text="你好，"
+                android:textSize="16sp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_sign"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="55dp"
+                android:layout_height="15dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/textview_border"
+                android:text="点此签到"
+                android:textColor="@color/main_red"
+                android:textSize="12sp" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/linearlayoutline"
+        android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView63"
+            android:id="@+id/textView62"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|center"
-            android:layout_marginBottom="15dp"
-            android:text="转值" />
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="2dp"
+            android:text="帐户馀额："
+            android:textSize="11sp" />
 
-    </FrameLayout>
+        <TextView
+            android:id="@+id/textView61"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="2dp"
+            android:text="12,834,971,239.00"
+            android:textSize="18sp" />
 
-    <View
-        android:layout_width="1dp"
+        <ImageButton
+            android:id="@+id/btnbalance"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="11dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="107dp"
+            app:srcCompat="@mipmap/arrow" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:background="@drawable/linearlayoutlinewhite"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="108dp"
-        android:background="#696969"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton32"
-        app:layout_constraintRight_toRightOf="@+id/frgdesposite"
-        android:layout_marginTop="50dp"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="51dp"
-        app:layout_constraintTop_toTopOf="@+id/textView61"
-        app:layout_constraintLeft_toRightOf="@+id/frgdesposite"
-        android:id="@+id/view4" />
+        android:background="@drawable/linearlayoutline"
+        android:orientation="horizontal"
+        android:weightSum="3">
 
-    <View
-        android:id="@+id/view"
-        android:layout_width="1dp"
-        android:layout_height="0dp"
-        android:background="#696969"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="@+id/view4"
-        app:layout_constraintRight_toRightOf="@+id/textView61"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintTop_toTopOf="@+id/view4"
-        app:layout_constraintLeft_toRightOf="@+id/textView61" />
+        <FrameLayout
+            android:id="@+id/frgdesposite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/linearlayoutright">
 
-    <View
-        android:id="@+id/view2"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:background="#696969"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        android:layout_marginStart="28dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView16"
-        android:layout_marginEnd="28dp"
-        app:layout_constraintRight_toRightOf="@+id/btnbalance"
-        app:layout_constraintTop_toBottomOf="@+id/textView16"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toRightOf="@+id/toolbar"
-        android:layout_marginLeft="28dp"
-        android:layout_marginRight="28dp" />
+            <TextView
+                android:id="@+id/textView63"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="79dp"
+                android:text="充值" />
 
-    <View
-        android:id="@+id/view3"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:background="#696969"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/frgdesposite"
-        android:layout_marginStart="12dp"
-        android:layout_marginEnd="17dp"
-        app:layout_constraintRight_toRightOf="@+id/view2"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/frgdesposite"
-        android:layout_marginLeft="12dp"
-        android:layout_marginRight="17dp" />
+            <ImageButton
+                android:id="@+id/btndeposit"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="56dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@mipmap/mind_savemoney_icon" />
 
-    <FrameLayout
-        android:id="@+id/frgdesposite"
-        android:layout_width="119dp"
-        android:layout_height="0dp"
-        android:background="@color/frg_color"
-        android:clickable="true"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        android:layout_marginStart="49dp"
-        app:layout_constraintBottom_toBottomOf="@+id/frgdesposite"
-        android:layout_marginEnd="49dp"
-        app:layout_constraintRight_toRightOf="@+id/btnbalance"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/imageButton21"
-        app:layout_constraintTop_toTopOf="@+id/frgdesposite"
-        android:layout_marginLeft="49dp"
-        android:layout_marginRight="49dp">
+        </FrameLayout>
 
-        <ImageButton
-            android:id="@+id/btndeposit"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="56dp"
-            android:layout_height="43dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="13dp"
-            app:srcCompat="@mipmap/mind_takemoney_icon"
-            tools:layout_editor_absoluteX="8dp"
-            tools:layout_editor_absoluteY="182dp" />
+        <FrameLayout
+            android:id="@+id/frgdesposite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/frg_color">
 
-        <TextView
-            android:id="@+id/textView63"
-            android:layout_width="wrap_content"
+            <ImageButton
+                android:id="@+id/btntransfer"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="13dp"
+                app:srcCompat="@mipmap/mind_transfermoney_icon" />
+
+            <TextView
+                android:id="@+id/textView63"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="79dp"
+                android:text="转值" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frgdesposite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/linearlayoutleft">
+
+            <ImageButton
+                android:id="@+id/btndebit"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="56dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="18dp"
+                app:srcCompat="@mipmap/mind_takemoney_icon" />
+
+            <TextView
+                android:id="@+id/textView63"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="79dp"
+                android:text="提款" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:background="@drawable/linearlayoutlinewhite"
+        android:orientation="vertical"></LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|center"
-            android:layout_marginBottom="15dp"
-            android:text="提款" />
+            android:orientation="vertical">
 
-    </FrameLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
 
-    <FrameLayout
-        android:id="@+id/frgdesposite"
-        android:layout_width="119dp"
-        android:layout_height="0dp"
-        android:background="@color/frg_color"
-        android:clickable="true"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        android:layout_marginStart="4dp"
-        app:layout_constraintBottom_toBottomOf="@+id/frgdesposite"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/view3"
-        app:layout_constraintTop_toTopOf="@+id/view3"
-        android:layout_marginLeft="4dp">
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="4">
 
-        <ImageButton
-            android:id="@+id/btndeposit"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="56dp"
-            android:layout_height="42dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
-            app:srcCompat="@mipmap/mind_savemoney_icon"
-            tools:layout_editor_absoluteX="8dp"
-            tools:layout_editor_absoluteY="182dp" />
+                    <Button
+                        android:id="@+id/btnmail"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="1"
+                        android:background="@drawable/linearlayoutline"
+                        android:text="站内信箱"
+                        android:textColor="@color/login_hint" />
 
-        <TextView
-            android:id="@+id/textView63"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|center"
-            android:layout_marginBottom="15dp"
-            android:text="充值" />
+                    <Button
+                        android:id="@+id/btnvip"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="1"
+                        android:background="@drawable/linearlayoutline"
+                        android:text="VIP会所"
+                        android:textColor="@color/login_hint" />
 
-    </FrameLayout>
+                    <Button
+                        android:id="@+id/btnrecord"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="1"
+                        android:background="@drawable/linearlayoutline"
+                        android:text="优惠领取记录"
+                        android:textColor="@color/login_hint" />
 
-</android.support.constraint.ConstraintLayout>
+                    <Button
+                        android:id="@+id/btnrake"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="1"
+                        android:background="@drawable/linearlayoutline"
+                        android:text="反水记录"
+                        android:textColor="@color/login_hint" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="4">
+
+                    <Button
+                        android:id="@+id/btnevent"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="1"
+                        android:background="@drawable/linearlayoutlefbutton"
+                        android:text="优惠活动"
+                        android:textColor="@color/login_hint" />
+
+                    <Button
+                        android:id="@+id/btncoupon"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="1"
+                        android:background="@drawable/linearlayoutlefbutton"
+                        android:text="优惠领取"
+                        android:textColor="@color/login_hint" />
+
+                    <Button
+                        android:id="@+id/btnfunds"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="1"
+                        android:background="@drawable/linearlayoutlefbutton"
+                        android:text="资金记录"
+                        android:textColor="@color/login_hint" />
+
+                    <Button
+                        android:id="@+id/btnpoints"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="1"
+                        android:background="@drawable/linearlayoutlefbutton"
+                        android:text="积分记录"
+                        android:textColor="@color/login_hint" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</LinearLayout>

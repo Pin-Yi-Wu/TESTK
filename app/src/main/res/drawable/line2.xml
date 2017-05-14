@@ -8,5 +8,5 @@
         android:dashGap="2dp"
         android:dashWidth="4dp" />
     <!-- 形状的高度 -->
-    <size android:height="4dp" />
+
 </shape>

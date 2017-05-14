@@ -41,6 +41,14 @@
         <activity android:name=".Transfer_Activity"></activity>
         <activity android:name=".Debit_Activity"></activity>
         <activity android:name=".UPMarqueeView"></activity>
+        <activity android:name=".My_Mail"></activity>
+        <activity android:name=".My_Coupon"></activity>
+        <activity android:name=".My_CouponRecord"></activity>
+        <activity android:name=".My_Event"></activity>
+        <activity android:name=".My_Funds"></activity>
+        <activity android:name=".My_Points"></activity>
+        <activity android:name=".My_Rake"></activity>
+        <activity android:name=".My_VIP"></activity>
 
         <activity android:name=".Splash">
             <intent-filter>

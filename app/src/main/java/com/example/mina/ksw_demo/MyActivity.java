@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
@@ -36,13 +37,22 @@ public class MyActivity extends BaseActivity {
         RadioButton rb=(RadioButton)findViewById(R.id.listing);
         rb.setCompoundDrawablesWithIntrinsicBounds( 0,R.mipmap.member_touch_icon, 0,0);
         rb.setTextColor(Color.parseColor("#D8A86B"));
-        ImageButton img7=(ImageButton)findViewById(R.id.img7);
-        ImageButton btnbalance=(ImageButton)findViewById(R.id.btnbalance);
-        ImageButton btndeposit=(ImageButton)findViewById(R.id.btndeposit);
-        ImageButton btntransfer=(ImageButton)findViewById(R.id.btntransfer);
-        ImageButton btndebit=(ImageButton)findViewById(R.id.btndebit);
-        TextView tvaccountName = (TextView)findViewById(R.id.tvaccountName);
-        FrameLayout frgdesposite = (FrameLayout)findViewById(R.id.frgdesposite);
+                                                        TextView tv_sign=(TextView)findViewById(R.id.tv_sign);
+                                                        ImageButton btnbalance=(ImageButton)findViewById(R.id.btnbalance);
+                                                        ImageButton btndeposit=(ImageButton)findViewById(R.id.btndeposit);
+                                                        ImageButton btntransfer=(ImageButton)findViewById(R.id.btntransfer);
+                                                        ImageButton btndebit=(ImageButton)findViewById(R.id.btndebit);
+                                                        TextView tvaccountName = (TextView)findViewById(R.id.tvaccountName);
+                                                        FrameLayout frgdesposite = (FrameLayout)findViewById(R.id.frgdesposite);
+                                                        Button btnmail=(Button)findViewById(R.id.btnmail);
+                                                        Button btnvip=(Button)findViewById(R.id.btnvip);
+                                                        Button btnrecord=(Button)findViewById(R.id.btnrecord);
+                                                        Button btnrake=(Button)findViewById(R.id.btnrake);
+                                                        Button btnevent=(Button)findViewById(R.id.btnevent);
+                                                        Button btncoupon=(Button)findViewById(R.id.btncoupon);
+                                                        Button btnfunds=(Button)findViewById(R.id.btnfunds);
+                                                        Button btnpoints=(Button)findViewById(R.id.btnpoints);
+                                                        FrameLayout gotoeditAccoint = (FrameLayout) findViewById(R.id.gotoeditAccoint);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -58,52 +68,124 @@ public class MyActivity extends BaseActivity {
             }
         });
 
-        img7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.setClass(MyActivity.this,AccountActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-        btnbalance.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.setClass(MyActivity.this,Balance_Activity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-        frgdesposite.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.setClass(MyActivity.this,DepositActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+                                            gotoeditAccoint.setOnClickListener(new View.OnClickListener() {
+                                                @Override
+                                                public void onClick(View v) {
+                                                    Intent intent = new Intent();
+                                                    intent.setClass(MyActivity.this,AccountActivity.class);
+                                                    startActivity(intent);
+                                                    finish();
+                                                }
+                                            });
+                                            btnbalance.setOnClickListener(new View.OnClickListener() {
+                                                @Override
+                                                public void onClick(View v) {
+                                                    Intent intent = new Intent();
+                                                    intent.setClass(MyActivity.this,Balance_Activity.class);
+                                                    startActivity(intent);
+                                                    finish();
+                                                }
+                                            });
+                                            frgdesposite.setOnClickListener(new View.OnClickListener() {
+                                                @Override
+                                                public void onClick(View v) {
+                                                    Intent intent = new Intent();
+                                                    intent.setClass(MyActivity.this,DepositActivity.class);
+                                                    startActivity(intent);
+                                                    finish();
+                                                }
+                                            });
 
-        btntransfer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.setClass(MyActivity.this,Transfer_Activity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-        btndebit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.setClass(MyActivity.this,Debit_Activity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+                                            btntransfer.setOnClickListener(new View.OnClickListener() {
+                                                @Override
+                                                public void onClick(View v) {
+                                                    Intent intent = new Intent();
+                                                    intent.setClass(MyActivity.this,Transfer_Activity.class);
+                                                    startActivity(intent);
+                                                    finish();
+                                                }
+                                            });
+                                            btndebit.setOnClickListener(new View.OnClickListener() {
+                                                @Override
+                                                public void onClick(View v) {
+                                                    Intent intent = new Intent();
+                                                    intent.setClass(MyActivity.this,Debit_Activity.class);
+                                                    startActivity(intent);
+                                                    finish();
+                                                }
+                                            });
+                                            btnmail.setOnClickListener(new View.OnClickListener() {
+                                                @Override
+                                                public void onClick(View v) {
+                                                    Intent intent = new Intent();
+                                                    intent.setClass(MyActivity.this,My_Mail.class);
+                                                    startActivity(intent);
+                                                    finish();
+                                                }
+                                            });
+                                            btnvip.setOnClickListener(new View.OnClickListener() {
+                                                @Override
+                                                public void onClick(View v) {
+                                                    Intent intent = new Intent();
+                                                    intent.setClass(MyActivity.this,My_VIP.class);
+                                                    startActivity(intent);
+                                                    finish();
+                                                }
+                                            });
+                                            btnrecord.setOnClickListener(new View.OnClickListener() {
+                                                @Override
+                                                public void onClick(View v) {
+                                                    Intent intent = new Intent();
+                                                    intent.setClass(MyActivity.this,My_CouponRecord.class);
+                                                    startActivity(intent);
+                                                    finish();
+                                                }
+                                            });
+                                            btnrake.setOnClickListener(new View.OnClickListener() {
+                                                @Override
+                                                public void onClick(View v) {
+                                                    Intent intent = new Intent();
+                                                    intent.setClass(MyActivity.this,My_Rake.class);
+                                                    startActivity(intent);
+                                                    finish();
+                                                }
+                                            });
+                                            btnevent.setOnClickListener(new View.OnClickListener() {
+                                                @Override
+                                                public void onClick(View v) {
+                                                    Intent intent = new Intent();
+                                                    intent.setClass(MyActivity.this,My_Event.class);
+                                                    startActivity(intent);
+                                                    finish();
+                                                }
+                                            });
+                                            btncoupon.setOnClickListener(new View.OnClickListener() {
+                                                @Override
+                                                public void onClick(View v) {
+                                                    Intent intent = new Intent();
+                                                    intent.setClass(MyActivity.this,My_Coupon.class);
+                                                    startActivity(intent);
+                                                    finish();
+                                                }
+                                            });
+                                            btnfunds.setOnClickListener(new View.OnClickListener() {
+                                                @Override
+                                                public void onClick(View v) {
+                                                    Intent intent = new Intent();
+                                                    intent.setClass(MyActivity.this,My_Funds.class);
+                                                    startActivity(intent);
+                                                    finish();
+                                                }
+                                            });
+                                            btnpoints.setOnClickListener(new View.OnClickListener() {
+                                                @Override
+                                                public void onClick(View v) {
+                                                    Intent intent = new Intent();
+                                                    intent.setClass(MyActivity.this,My_Points.class);
+                                                    startActivity(intent);
+                                                    finish();
+                                                }
+                                            });
 
     }
     @Override

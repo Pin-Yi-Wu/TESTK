@@ -51,6 +51,10 @@
                 android:layout_marginTop="12dp"
                 android:layout_weight="1"
                 app:srcCompat="@mipmap/realman_xenbo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
         </LinearLayout>
     </ScrollView>
 

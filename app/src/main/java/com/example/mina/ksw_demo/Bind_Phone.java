@@ -8,6 +8,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -22,7 +23,8 @@ public class Bind_Phone extends BaseActivity {
         dynamicContent = (LinearLayout) findViewById(R.id.dynamicContent);
         View wizard = getLayoutInflater().inflate(R.layout.bind_phone, null);
         dynamicContent.addView(wizard);
-
+        EditText bindphone = (EditText)findViewById(R.id.bindphone);
+        bindphone.setBackgroundDrawable(null);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);

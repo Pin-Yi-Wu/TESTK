@@ -5,9 +5,15 @@
 
 
   <!-- Settings, should always be in the overflow -->
-  <item android:id="@+id/help"
-      android:icon="@mipmap/nav_arrow_icon"
+  <item
+      android:id="@+id/help"
+      android:layout_width="match_parent"
+      android:layout_height="56dp"
+   android:icon="@mipmap/index_customer_icon"
+      android:background="@drawable/oneline"
       android:title="@string/help"
-      app:showAsAction="always"/>
+      app:contentInsetLeft="0px"
+      app:contentInsetStart="0px"
+      app:showAsAction="always" />
 
 </menu>
